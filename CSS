@@ -1,0 +1,83 @@
+*
+{
+    margin:0px;
+    padding:0px;
+    background-color:cornflowerblue;
+}
+.clock
+{
+     background-image:url("clock.png");
+     background-repeat:no-repeat;
+     background-size:100%;
+     width:30vw;
+     height:30vw;
+     margin:auto;
+     position:relative;
+}
+#hour,#min
+{
+    position:absolute;
+    background-color:black;
+    border-radius:10px;
+    transform-origin: bottom;
+}
+#hour
+{
+    width: 2%;
+    height: 26%;
+    top: 24%;
+    left: 48%;
+    
+}
+#min
+{
+    width: 2%;
+    height: 35%;
+    top: 15%;
+    left: 49%;
+    
+    
+}
+#sec
+{
+    position:absolute;
+    background-color:chartreuse;
+    border-radius:10px;
+    transform-origin: bottom;
+    width: 1%;
+    height: 34%;
+    top: 16%;
+    left: 49.5%;
+}
+
+#hero
+{
+    background-image:url("hero1.png");
+    width:256px;
+    height:250px;
+    animation:walk 1s steps(6) infinite, forward 9s linear infinite;
+
+}
+@keyframes walk{
+    0%
+    {
+        background-position:1px;
+    }
+    100%
+    {
+        background-position:1536px;
+    }
+
+
+}
+@keyframes forward
+{
+    0%
+    {
+        transform:translate(-100px);
+    }
+    100%
+    {
+        transform:translateX(1100px);
+    }
+}
